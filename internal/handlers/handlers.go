@@ -16,7 +16,7 @@ func MainHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, fmt.Sprintf("Method %s not allowed", r.Method), http.StatusMethodNotAllowed)
 		return
 	}
-	http.ServeFile(w, r, "/home/kitaro/go/YaPractikum_Go_begining/Sprint6/go1fl-sprint6-final-tpl/index.html")
+	http.ServeFile(w, r, "./index.html")
 }
 
 func UploadHandler(w http.ResponseWriter, r *http.Request) {
